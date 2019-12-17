@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
+
 html {
+	font-family: 'MedievalSharp', cursive;
 	scroll-behavior: smooth;
 	height: 100%;
 }
@@ -9,19 +12,33 @@ body {
 }
 
 nav {
-	padding: 10px 0;
 	background-color: #000;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
 	position: fixed;
 	top: 0;
 	width: 100%;
 }
 
+.navLimiter {
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 1440px;
+	margin: auto;
+}
+
+.limiter {
+	max-width: 1440px;
+	margin: auto;
+}
+
 a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	color: white;
 	text-decoration: none;
+	padding: 10px 20px;
 }
 
 #links {
@@ -30,6 +47,7 @@ a {
 	font-size: 38px;
 	align-content: center;
 	width: 800px;
+	flex-wrap: wrap;
 }
 
 .logo {
