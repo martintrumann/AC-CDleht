@@ -27,6 +27,7 @@ nav {
 	margin: auto;
 }
 
+
 .limiter {
 	max-width: 1440px;
 	margin: auto;
@@ -50,6 +51,29 @@ a {
 	flex-wrap: wrap;
 }
 
+#navBtn {
+	display: none;
+	border: none;
+	background-color: rgba(0,0,0,1);
+	font-size: 70px;
+	display: flex;
+	align-content: center;
+	outline: none;
+
+}
+
+@media only screen and (max-width: 1000px) {
+	#links {
+		height: 0;
+		overflow: hidden;
+		width: 100%;
+	}
+	#navBtn {
+		display: flex;
+	}
+}
+
+
 .logo {
 	max-height: 80px;
 	height: 100%;
@@ -66,3 +90,10 @@ a {
 	background-image: url("./img/divider.png");
 	
 }
+
+#about {
+	background-image: url("./img/background.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
