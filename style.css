@@ -96,4 +96,19 @@ a {
 	background-position: center;
 	background-size: cover;
 }
+div.transbox {
+	margin: 1px;
+	background-color: rgba(0, 0, 0, 0.8);
+	border: 1px solid black;
+	filter: alpha(opacity=60);
+	font-family: 'Neuton', serif;
+	font-size: 38px;
+	
 
+  }
+  
+  div.transbox p {
+	margin: 5%;
+	font-weight: bold;
+	color:#D8B990;
+  }
