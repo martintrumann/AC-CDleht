@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
 
+p {
+	margin: 0;
+}
+
 html {
 	font-family: 'MedievalSharp', cursive;
 	scroll-behavior: smooth;
@@ -97,6 +101,7 @@ a {
 	background-position: center;
 	background-size: cover;
 }
+
 
 .desc {
 	font-size: 35px;
