@@ -99,10 +99,10 @@ a {
 }
 
 .vibing_man{
-	height: 90%;
-	position: absolute;
+	height: 130%;
+	position: relative;
 	z-index: 1;
-	top: 175px;
+	top: -153px;
 	left: 51%;
 	overflow: hidden;
 }
@@ -152,14 +152,22 @@ a {
 	text-align: center;
 }
 
+@media only screen and (max-width: 370px) {
+	.filler {
+		height: 900px;
+	}
+
+	img.vibing_man{
+		top: 319px;
+	}
+}
+
 @media only screen and (max-width: 970px) {
 	.images{
 		grid-template-columns: 100%;
 	}
 }
 
-@media only screen and (max-width: 370px) {
-}
 
 @media only screen and (max-width: 1000px) {
 	#links {
@@ -171,8 +179,8 @@ a {
 	.vibing_man{ 
 		height: 80%;
 		left: unset;
-		right: 0;
-		top: 376px;
+		float: right;
+		top: 283px;
 	}
 
 	#about .filler {
@@ -180,6 +188,7 @@ a {
 	}
 
 	.desc {
+		position: absolute;
 		width: unset;
 		padding: 20px;
 	}
