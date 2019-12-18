@@ -52,6 +52,7 @@ a {
 }
 
 #navBtn {
+	color: #9f8057;
 	display: none;
 	border: none;
 	background-color: rgba(0,0,0,1);
@@ -96,3 +97,6 @@ a {
 	background-size: cover;
 }
 
+.desc {
+	
+}
