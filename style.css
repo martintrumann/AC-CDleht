@@ -48,6 +48,10 @@ a {
 	padding: 0;
 }
 
+.album > div{
+	padding: 0px 10px;
+}
+
 #links {
 	display: flex;
 	justify-content: space-around;
