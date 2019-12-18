@@ -118,6 +118,10 @@ a {
 	grid-row-gap: 20px;
 }
 
+.images img{
+	width: 100%;
+}
+
 .images div{
 	margin:auto;
 }
@@ -150,8 +154,11 @@ a {
 
 @media only screen and (max-width: 970px) {
 	.images{
-		grid-template-columns: auto;
+		grid-template-columns: 100%;
 	}
+}
+
+@media only screen and (max-width: 370px) {
 }
 
 @media only screen and (max-width: 1000px) {
@@ -165,7 +172,7 @@ a {
 		height: 80%;
 		left: unset;
 		right: 0;
-		top: 255px;
+		top: 376px;
 	}
 
 	#about .filler {
