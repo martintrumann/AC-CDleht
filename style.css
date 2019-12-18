@@ -131,16 +131,21 @@ a {
 #albums{
 	background-color:#dcdcdc;
 }
+
 .album{
 	display:flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
+
 .album img{
 	height: 200px;
 }
+
 .album h2{
 	font-size: 20px;
+	width: 200px;
+	text-align: center;
 }
 
 @media only screen and (max-width: 970px) {
@@ -155,16 +160,23 @@ a {
 		overflow: hidden;
 		width: 100%;
 	}
+
 	.vibing_man{ 
-		display: none;
+		height: 80%;
+		left: unset;
+		right: 0;
+		top: 255px;
 	}
+
 	#about .filler {
 		padding: 0;
 	}
+
 	.desc {
 		width: unset;
 		padding: 20px;
 	}
+
 	#navBtn {
 		display: flex;
 	}
