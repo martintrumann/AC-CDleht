@@ -80,10 +80,13 @@ a {
 }
 
 .filler {
-	height: 1000px;
+	height: 800px;
 	background-color: green;
 }
-
+#about .filler{
+	padding-top:200px;
+	box-sizing: border-box;
+}
 .divider {
 	height: 100px;
 	background-color: red;
@@ -98,5 +101,36 @@ a {
 }
 
 .desc {
+	font-size: 35px;
+	color:#D8B990;
+	background-color:rgba(0,0,0,0.8);
+	padding:0 20px;
+	width: 70%;
+}
+
+.vibing_man{
+	position: relative;
+}
+#members {
+	background-color:#DCDCDC;
+}
+.images{
+	display:grid;
 	
+	grid-template-columns: auto auto;
+	grid-row-gap: 20px;
+
+}
+.images div{
+	margin:auto;
+}
+@media only screen and (max-width: 970px) {
+	.images{
+		grid-template-columns: auto;
+	}
+}
+#members h1{
+	margin:0px;
+	text-align:center;
+	padding:20px 0;
 }
