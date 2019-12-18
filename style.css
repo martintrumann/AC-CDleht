@@ -4,6 +4,7 @@ html {
 	font-family: 'MedievalSharp', cursive;
 	scroll-behavior: smooth;
 	height: 100%;
+	box-sizing: border-box;
 }
 
 body {
@@ -16,6 +17,7 @@ nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 1000;
 }
 
 .navLimiter {
@@ -62,17 +64,6 @@ a {
 
 }
 
-@media only screen and (max-width: 1000px) {
-	#links {
-		height: 0;
-		overflow: hidden;
-		width: 100%;
-	}
-	#navBtn {
-		display: flex;
-	}
-}
-
 
 .logo {
 	max-height: 80px;
@@ -104,33 +95,67 @@ a {
 	font-size: 35px;
 	color:#D8B990;
 	background-color:rgba(0,0,0,0.8);
-	padding:0 20px;
-	width: 70%;
+	padding:0 90px 0 20px;
+	width: 65%;
 }
 
 .vibing_man{
-	position: relative;
+	height: 90%;
+	position: absolute;
+	z-index: 1;
+	top: 175px;
+	left: 51%;
+	overflow: hidden;
 }
+
 #members {
 	background-color:#DCDCDC;
 }
+
 .images{
 	display:grid;
-	
 	grid-template-columns: auto auto;
 	grid-row-gap: 20px;
 
 }
+
 .images div{
 	margin:auto;
 }
+
+.images h2{
+	text-align: center;
+}
+
+#members h1{
+	margin:0px;
+	text-align:center;
+	padding:20px 0;
+}
+
 @media only screen and (max-width: 970px) {
 	.images{
 		grid-template-columns: auto;
 	}
 }
-#members h1{
-	margin:0px;
-	text-align:center;
-	padding:20px 0;
+
+@media only screen and (max-width: 1000px) {
+	#links {
+		height: 0;
+		overflow: hidden;
+		width: 100%;
+	}
+	.vibing_man{ 
+		display: none;
+	}
+	#about .filler {
+		padding: 0;
+	}
+	.desc {
+		width: unset;
+		padding: 20px;
+	}
+	#navBtn {
+		display: flex;
+	}
 }
