@@ -80,8 +80,17 @@ a {
 }
 
 .filler {
-	height: 1000px;
 	background-color: green;
+	height: 100px;
+}
+
+.about {
+	background-image: url("./img/background.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 60vh;
+	display: flex;
+	align-items: baseline;
 }
 
 .divider {
@@ -91,12 +100,11 @@ a {
 	
 }
 
-#about {
-	background-image: url("./img/background.jpg");
-	background-position: center;
-	background-size: cover;
-}
-
 .desc {
-	
+	color: #9f8057;
+	font-size: 18px;
+	max-width: 450px;
+	margin-top: 3rem;
+	padding: 1rem 1rem 1rem 25rem;
+	background-color: hsla(0, 0%, 0%, .8);
 }
